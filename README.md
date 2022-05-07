@@ -16,10 +16,17 @@ Laparoscopy, a popular method of minimally invasive surgery, boasts a wealth of 
 
 ## Code usage
 ### ATBR_3D_Control_Ela_Kanani.ino
-This code controls the robot proposed in this work by sending PWM signals via the BTS7960 H-Bridge motor driver and relays, as depicted in the following wiring diagram. The user inputs the desired bending direction(+/-), axis(x/y), robot section(1-10), activation time (ms) and PWM power separated by commas, followed by the enter key. 
+This code controls the robot proposed in this work by sending PWM signals via the BTS7960 H-Bridge motor driver and relays, as depicted in the following wiring diagram. The user inputs the desired bending direction(+/-), axis(x/y), robot section(1-10), activation time (ms) and PWM power separated by commas, followed by the enter key. Subsequently, the robot moves in the desired way.
 
 ![Wiring Diagram](https://github.com/Ela-Kan/ATBRBEngProject/blob/main/Images/WiringDiagram.jpg?raw=true)
 
+### CC_Kinematics_Finalised_Theory_v5.m
+MATLAB script using forward kinematics and the constant curvature approximation (popular with continuum manipulators) to generate random valid ATBR configurations. An example of the plot generated can be seen in the below figure. Here, the helical shape represents the manipulator.
+![Example Random Robot Configuration](https://github.com/Ela-Kan/ATBRBEngProject/blob/main/Images/ExampleConfiguration.png?raw=true)
+
+### CC_Kinematics_Creating_Workspace.m
+This script uses the code theory provided in *CC_Kinematics_Finalised_Theory_v5.m* to generate 5500 random ATBR configurations. From here, the end effector 3D-spatial positions (X,Y,Z) are stored and plotted to allow estimation of the robot's workspace. Here, the parameters for the robot are inserted in the code. The generated workspace used in my dissertation is within the following plot:
+![Estimated Workspace](https://github.com/Ela-Kan/ATBRBEngProject/blob/main/Images/EstimateddWorkspace.jpg?raw=true)
 
 
 ## References
