@@ -26,7 +26,7 @@ MATLAB script using forward kinematics and the constant curvature approximation 
 
 ### CC_Kinematics_Creating_Workspace.m
 This script uses the code theory provided in *CC_Kinematics_Finalised_Theory_v5.m* to generate 5500 random ATBR configurations. From here, the end effector 3D-spatial positions (X,Y,Z) are stored and plotted to allow estimation of the robot's workspace. Here, the parameters for the robot are inserted in the code. The generated workspace used in my dissertation is within the following plot:
-![Estimated Workspace](https://github.com/Ela-Kan/ATBRBEngProject/blob/main/Images/EstimatedWorkspace.jpg?raw=true)
+![Estimated Workspace](https://github.com/Ela-Kan/ATBRBEngProject/blob/main/Images/EstimatedWorkspace.png?raw=true)
 
 
 ## References
